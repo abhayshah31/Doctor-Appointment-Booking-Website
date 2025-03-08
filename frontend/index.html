@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking Application</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Verdana, Geneva, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #9ab7d6;
+            color: black;
+            font-weight: bolder;
+        }
+
+        /* div {
+            margin-top: 100px;
+        } */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgba(138, 207, 235, 0.233);
+        }
+
+        nav h1 {
+            color: #007bff;
+            margin-left: 50px
+        }
+
+        #buttons {
+            margin-right: 30px
+        }
+
+        #login {
+            margin-right: 20px
+        }
+
+        #maincard {
+            margin-bottom: 50px
+        }
+
+        #services img {
+            width: 50%;
+            height: 400px
+        }
+
+        #services h1 {
+            background-color: #8ab7e7;
+            font-size: 35px;
+            font-family: Verdana, Geneva, sans-serif;
+        }
+
+        #index h1{
+            cursor:pointer
+        }
+
+        #index h1,
+        #maincard h1{
+            font-family: Verdana, Geneva, sans-serif;
+        }
+
+        #offer {
+            font-size: 40px;
+        }
+
+        footer {
+            background-color: rgba(138, 207, 235, 0.233);
+            margin-top: 50px;
+            padding: 40px
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div id="index">
+            <h1>WeCare</h1>
+        </div>
+
+        <div id="buttons">
+            <button id="login">LOGIN</button>
+
+            <button id="signup">SIGNUP</button>
+        </div>
+    </nav>
+
+    <div id="maincard" style="position: relative; text-align: center;">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; background: rgba(83, 83, 83, 0.7); color: white; padding: 10px 0; border-radius: 0;">
+            <h1 style="margin: 0; font-size: 24px; text-align: center;">Welcome to Doctor Appointment Booking Website</h1>
+        </div>
+    
+        <div>
+            <img src="https://i.pinimg.com/736x/21/ea/2b/21ea2b082a327232ce57ecf1bf5ee742.jpg" alt="wecare_image" style="width: 100%; height: auto; display: block;">
+        </div>
+    </div>
+    
+    
+    <h1 id="offer">What we offer</h1>
+
+    <div id="services">
+        <div>
+            <div>
+                <h1>Best Doctors Available All Over India</h1>
+            </div>
+            <div>
+                <img src=" https://img.freepik.com/free-photo/doctor-nurses-special-equipment_23-2148980721.jpg?w=740&t=st=1687871336~exp=1687871936~hmac=cafebc5917234993975d2efff33e262d206fea3c6d412d1c81b4558437349277"
+                    alt="">
+            </div>
+        </div>
+
+        <br>
+        <div>
+            <div>
+                <h1>Just Signup and Start Booking appointments</h1>
+            </div>
+
+            <div>
+                <img src="https://img.freepik.com/free-photo/young-doctor-supporting-his-patient_1098-2237.jpg?w=740&t=st=1687871522~exp=1687872122~hmac=9b9f7ba79749f10e06f6beef15573378b2580eaba5912f123f461a0317d58ea8"
+                    alt="">
+            </div>
+        </div>
+        <br>
+        <div>
+            <div>
+                <h1>Here, Our Doctors offer Video Call Consultations, Cool Isnt it?</h1>
+            </div>
+
+            <div>
+                <img src="https://img.freepik.com/free-photo/old-disabled-woman-lying-hospital-bed-having-online-video-call-with-doctor-nurse-is-her_482257-20630.jpg?w=826&t=st=1687871700~exp=1687872300~hmac=0eda02317e5edf30b301b74a3acf912b496e8e67032765f2bc11d63e44e3fd39"
+                    alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <a href="#">Follow us </a>
+        <br>
+        <br>
+        <a href="#">For More information</a>
+    </footer>
+</body>
+
+</html>
+
+<script>
+
+    const url = "https://pococare-assignment.vercel.app/"
+    const signup = document.getElementById("signup")
+
+    signup.addEventListener("click", () => {
+        window.location.href = `./view/signup.html`
+    })
+
+
+
+    const login = document.getElementById("login")
+
+    login.addEventListener("click", () => {
+        window.location.href = "./view/signin.html"
+    })
+
+    // `${url}view/signin.html`
+</script>
